@@ -22,13 +22,15 @@ if(userNum >= 1 && userNum <= 5){
 }
 // generiamo un numero da 1 a 5 per il computer con una funzione
 function numeroRandom (min, max) {
-    let numeroGenerato = Math.floor(Math.random ()*(max - min + 1) + min);
+    const numeroGenerato = Math.floor(Math.random ()*(max - min + 1) + min);
     return numeroGenerato;
 }
  let numeroComputer = numeroRandom (1, 5);
  console.log(numeroComputer);
 
 // faccio la somma dei due numeri
+
+
 // SE il mio numero è quanto scelo dal user...
 // stampo "Sei il vincitore"
 // SE diverso da quanto sceltro dall'user...
