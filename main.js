@@ -5,6 +5,13 @@ console.log(pariDispari);
 // creare un prompt numerico per l'User facendogli inserire un numero da 1 a 5
 const userNum = parseInt(prompt("Segli un numero da 1 a 5"));
 // faccio un controlla che il numero inserito sia da 1 a 5
+if(userNum >= 1 && userNum <= 5){
+    let numeroScelto = userNum;
+    console.log(numeroScelto);
+} else {
+    let ritenta = ("Se non scegli un numero da 1 a 5 non puoi giocare! refresha la pagina per ritentare");
+    console.log(ritenta);
+}
 // generiamo un numero da 1 a 5 per il computer
 // faccio la somma dei due numeri
 // SE il mio numero è quanto scelo dal user...
