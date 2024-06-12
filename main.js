@@ -21,10 +21,6 @@ if(userNum >= 1 && userNum <= 5){
     console.log(ritenta);
 }
 // generiamo un numero da 1 a 5 per il computer con una funzione
-function numeroRandom (min, max) {
-    const numeroGenerato = Math.floor(Math.random ()*(max - min + 1) + min);
-    return numeroGenerato;
-}
  let numeroComputer = numeroRandom (1, 5);
  console.log(numeroComputer);
 
