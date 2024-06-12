@@ -3,6 +3,7 @@
 const pariDispari = prompt ("Pari o dispari?");
 console.log(pariDispari);
 // creare un prompt numerico per l'User facendogli inserire un numero da 1 a 5
+const userNum = parseInt(prompt("Segli un numero da 1 a 5"));
 // faccio un controlla che il numero inserito sia da 1 a 5
 // generiamo un numero da 1 a 5 per il computer
 // faccio la somma dei due numeri
