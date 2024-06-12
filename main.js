@@ -1,9 +1,13 @@
-// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
+/* L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+Dichiariamo chi ha vinto.*/
 // creare un prompt e chiedere l'user di scegliere pari o dispari
-const pariDispari = prompt ("Pari o dispari?");
+const pariDispari = prompt ("pari o dispari?");
 // Controllo che il valore inserito sia pari o dispari
-const sceltoPD = pariDispari;
+let sceltoPD = pariDispari;
 let ritenta;
+
 if (sceltoPD === "pari" || sceltoPD === "dispari") {
     console.log(sceltoPD);
 }else{
@@ -26,9 +30,16 @@ if(userNum >= 1 && userNum <= 5){
 
 // faccio la somma dei due numeri
 let somma2Input = sommaDueNumeri (userNum, numeroComputer);
-console.log(somma2Input);
 
-// SE il mio numero è quanto scelo dal user...
+// Stabilisco se il mio numero è pari e dispari
+let tipo = OddEven (somma2Input);
 // stampo "Sei il vincitore"
-// SE diverso da quanto sceltro dall'user...
-// stampa "Hai perso! il computer ti ha battutto"
+let vincitore;
+if (sceltoPD === tipo) { // SE diverso da quanto sceltro dall'user...
+    vincitore = "hai vinto tu!";
+} else { // stampa "Hai perso! il computer ti ha battutto"
+    vincitore = ("Il vincitore è il Computer");
+    
+}
+
+console.log(vincitore);
