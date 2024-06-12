@@ -25,7 +25,8 @@ if(userNum >= 1 && userNum <= 5){
  console.log(numeroComputer);
 
 // faccio la somma dei due numeri
-
+let somma2Input = sommaDueNumeri (userNum, numeroComputer);
+console.log(somma2Input);
 
 // SE il mio numero è quanto scelo dal user...
 // stampo "Sei il vincitore"
